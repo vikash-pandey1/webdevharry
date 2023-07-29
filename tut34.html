@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+
+    }
+    .card{
+        padding: 23px 12px;
+        border: 2px solid red;
+        background-color: burlywood;
+        /*box-shadow offset-x offset-y blur-shadow  spread-radious color*/
+        box-shadow: 10px 13px 10px green;
+    }
+    .card h2{
+        text-shadow: 3px 4px 10px red;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="car-1"><h2>This is C++ Course</h2>
+            <p> I have strted C++ course which does not mean that we will stop this course. We will continue this course to completion.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aliquam nobis fugit facere eaque commodi doloremque quidem aut possimus corrupti nesciunt consequuntur, eius, harum cupiditate dignissimos mollitia nemo facilis veritatis dolorem dolores! Eveniet, quod.</p>
+
+        </div>
+        <div class="card" id="car-2"><h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis soluta quibusdam deleniti, quam nam suscipit libero neque sunt itaque odio similique molestiae iure sint aspernatur assumenda recusandae ad eum a ratione consectetur fuga nulla.</p>
+
+        </div>
+        <div class="card" id="car-3"><h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, delectus ullam nihil eveniet aut possimus sapiente nesciunt quod! Aspernatur sunt debitis quaerat, doloribus saepe quod quas neque commodi consequuntur, sed quisquam harum dicta minus.</p>
+        </div>
+    </div>
+</body>
+</html>

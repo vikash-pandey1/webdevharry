@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>This is arrow function tutorial</h2>
+        <script>
+            // function greet(){
+            //     console.log("good mornign");
+            // }
+            greet=()=>{
+                console.log("good morning");
+            }
+            greet();
+            let sum = (a,b)=> a+b;
+            console.log(sum(43,3));
+            setTimeout(()=>{
+                console.log("we are inside set timeout")
+            },4000)
+            greed = ()=> console.log("inside arrow function");
+            greed();
+        </script>
+    </div>
+</body>
+</html>

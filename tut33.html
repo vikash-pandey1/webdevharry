@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector
+    </title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            content: "" ;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.4;
+            opacity: 0.4;
+            background: url(https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8OHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60) no-repeat center/cover;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        li{
+            list-style: none;
+            padding: 4px 13px;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        section{
+            height: 344px;
+            justify-content: center;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid rgb(220, 179, 179);
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>welcome to coding world</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, repellat? Possimus optio, exercitationem doloremque omnis fugit hic quasi impedit,fuga officia aspernatur sed quaerat aliquam, quam quas consectetur autem nisi.
+            </p>
+        </section>
+    </header>
+</body>
+</html>

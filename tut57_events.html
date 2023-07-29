@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            padding: 34px;
+            color: rgb(172, 45, 45);
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>events listening_events</h1>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover\mouseout
+    mousedown\mouseup
+    mousemove
+
+    submit
+    focus
+    domcontentLoaded
+
+    transitionend -->
+    <div class="container">
+        <h1>This is my container</h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque esse explicabo, quasi iusto
+            cupiditate ullam veritatis odio, suscipit libero laborum natus neque provident ex, aspernatur delectus
+            tempore eum veniam molestias ipsa aut rerum! Aliquid error accusantium pariatur iste itaque?</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('mouse insight')
+        });
+        para.addEventListener('mouseout',function run(){
+            alert('mouse outside')
+        });
+        function toggleHide() {
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para')
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            } 
+            else {
+                para.style.display = 'bloc';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
